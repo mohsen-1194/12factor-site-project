@@ -1,4 +1,4 @@
-Wirte a scraper for this site (12factor.net).
+Wirte a scraper for this website (12factor.net).
 Design a similar website and deploy it.
 
 Optional:
