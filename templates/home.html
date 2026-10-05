@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<article>
+    <h2 id="introduction">Introduction</h2>
+    <p>In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps that:</p>
+    <ul>
+        <li>Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;</li>
+        <li>Have a clean contract with the underlying operating system, offering maximum portability between execution environments;</li>
+        <li>Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;</li>
+        <li>Minimize divergence between development and production, enabling continuous deployment for maximum agility;</li>
+        <li>Can scale up without significant changes to tooling, architecture, or development practices.</li>
+    </ul>
+    <p>The twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).</p>
+</article>
+
+<article>
+    <h2 id="background">Background</h2>
+    <p>The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform.This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app’s codebase, and avoiding the cost of software erosion.Our motivation is to raise awareness of some systemic problems we’ve seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.   </p>
+</article>
+
+<article>
+    <h2 id="audience">Who should read this?</h2>
+    <p>Any developer building applications which run as a service. Ops engineers who deploy or manage such applications.</p>
+</article>
+
+<section aria-labelledby="factors-heading" id="factors">
+    <h2 id="factors-heading">The Twelve Factors</h2>
+    
+
+    <div class="factor-list">
+        <article id="codebase">
+            <h2><a href="codebase">I. Codebase</a></h2>
+            <p>One codebase tracked in revision control, many deploys.</p>
+        </article>
+        <article id="dependencies">
+            <h2><a href="dependencies">II. Dependencies</a></h2>
+            <p>Explicitly declare and isolate dependencies</p>
+        </article>
+        <article id="config">
+            <h2><a href="config">III. Config</a></h2>
+            <p>Store config in the environment</p>
+        </article>
+        <article id="backing-services">
+            <h2><a href="backing-services">IV. Backing services</a></h2>
+            <p>Treat backing services as attached resources</p>
+        </article>
+        <article id="build-release-run">
+            <h2><a href="build-release-run">V. Build, release, run</a></h2>
+            <p>Strictly separate build and run stages</P>
+        </article>
+        <article id="processes">
+            <h2><a href="processes">VI. Processes</a></h2>
+            <p>Execute the app as one or more stateless processes</p>
+        </article>
+        <article id="port-binding">
+            <h2><a href="port-binding">VII. Port binding</a></h2>
+            <p>Export services via port binding</p>
+        </article>
+        <article id="concurrency">
+            <h2><a href="concurrency">VIII. Concurrency</a></h2>
+            <p>Scale out via the process model</p>
+        </article>
+        <article id="disposability">
+            <h2><a href="disposability">IX. Disposability</a></h2>
+            <p>Maximize robustness with fast startup and graceful shutdown</p>
+        </article>
+        <article id="dev-prod-parity">
+            <h2><a href="dev-prod-parity">X. Dev/prod parity</a></h2>
+            <p>Keep development, staging, and production as similar as possible</p>
+        </article>
+        <article id="logs">
+            <h2><a href="logs">XI. Logs</a></h2>
+            <p>Treat logs as event streams</p>
+        </article>
+        <article id="admin-processes">
+            <h2><a href="admin-processes">XII. Admin processes</a></h2>
+            <p>Run admin/management tasks as one-off processes</p>
+        </article>
+    </div>
+</section>
+
+
+{% endblock %}
