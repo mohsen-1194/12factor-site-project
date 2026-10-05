@@ -10,4 +10,4 @@ wheels/
 .venv
 
 .mypy_cache/
-pages/
+
